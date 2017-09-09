@@ -1,1 +1,19 @@
-.box{width: 100px; height: 100px; background-color: aquamarine;} 
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+body{color: #222;}
+.clearfix::after{content: '';display: block; clear: both; height: 0;}
+
+header{height: 74px;background-color: #161b1e;color: white;}
+header h1{height: 74px; float: left;line-height: 74px; width: 200px; text-align: center; letter-spacing: 5px; font-weight: normal;}
+header .menu{height: 36px; margin: 19px 0; float: left;}
+header .menu > li{float: left; position: relative;}
+header .menu > li > a{display: block; padding: 0 20px; height: 36px; line-height: 36px; color: #fff;}
+header .menu > li:hover > a{background-color: #96da47;}
+
+.sub{background-color: #282d30; padding: 20px; position: absolute;top: 100%; left: 0;width: 500px; border-top: 1px solid #96da47;}
+.submenu{float: left; width: 25%;}
+.submenu li{}
+.submenu li a {color: white; display: block;height: 28px; line-height: 28px;}
+.submenu li a:hover{color:#96da47;}
+.submenu li.subtitle{color: white; font-size: 15px; margin-bottom: 10px;}
