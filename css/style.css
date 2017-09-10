@@ -18,3 +18,75 @@ header .menu > li:hover .sub{visibility: visible;transform: translateY(0px); opa
 .submenu li a {color: white; display: block;height: 28px; line-height: 28px;}
 .submenu li a:hover{color:#96da47;}
 .submenu li.subtitle{color: white; font-size: 15px; margin-bottom: 10px;}
+
+#dealSection{padding: 40px 0px;background-color: #96da47;}
+.deal{height: 46px;text-align: center; line-height: 46px;}
+.deal > div{display: inline-block;vertical-align: middle;}
+.deal_title{color: white; font-family: impact; font-size: 30px;}
+.dash{width: 40px; height: 1px; background-color: #222;}
+.deal_desc{font-size: 24px;}
+.deal_btn{width: 140px; background-color: white;color: #222;font-weight: bold; margin-left: 20px;font-size: 12px;cursor: pointer;position: relative;}
+
+.deal_btn::after{
+    content: 'VIEW ALL OFFERS';display: block;color: white;
+    position: absolute;top:0; left: 0; right: 0; bottom: 0; background-color: #222;
+    transform: scaleY(0);transform-origin: bottom;transition:all .4s ease;
+/*    z-index: -1;*/
+}
+.deal_btn:hover::after{
+    transform:scaleY(1);
+}
+#productView{padding: 80px;margin: 0 auto;width: 1200px;}
+.product_title{text-align: center; font-family:impact ; font-size: 30px;}
+.underline{margin: 20px auto 30px; width: 30px; height: 1px; background-color: #ccc;}
+.view_item{float: left; width: 280px;height: 400px;margin-right: 26px;background-image: url(../images/3-280x400.jpg);}
+.view_item:nth-child(4){margin-right: 0px;}
+.view_item img{visibility: hidden;transform: scale(0,0.8);transition: .6s;}
+.view_item:hover img{visibility:visible;transform: scale(1,1);}
+.view_item:hover .block{transform:translateY(-50px);}
+.product_view{position: relative;overflow: hidden;}
+.block{position: absolute;padding: 3px;box-sizing: border-box;transition: .4s}
+.block_list{}
+.block_list li{width: 40px; background-color: white; float: left; height: 40px; margin: 0 1px;text-align: center;line-height: 40px;}
+.block_list li.cart{width: calc(100% - 86px);}
+
+/*.caption{position: absolute;top:20px; width: 50px;height: 50px; background-color: red;transition: .4s}*/
+
+
+html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+
